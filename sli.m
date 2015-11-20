@@ -5,4 +5,7 @@ function sli(cube,sliceNum)
         sliceNum = 1;
     end
     imagesc(cube(:,:,sliceNum));
+    fig = gcf();
+    colorbar();
+    figure(fig); % pop current figure into front (so we can see it)
 end
